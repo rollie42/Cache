@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)lib</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -142,24 +143,24 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AlfuTest.cpp" />
-    <ClCompile Include="FifoTest.cpp" />
-    <ClCompile Include="LruTest.cpp" />
     <ClCompile Include="Program.cpp" />
-    <ClCompile Include="Test.cpp" />
-    <ClCompile Include="Tester.cpp" />
+    <ClCompile Include="tests\AlfuTest.cpp" />
+    <ClCompile Include="tests\FifoTest.cpp" />
+    <ClCompile Include="tests\LruTest.cpp" />
+    <ClCompile Include="tests\Test.cpp" />
+    <ClCompile Include="tests\Tester.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AlfuTest.h" />
-    <ClInclude Include="alfu_cache.h" />
-    <ClInclude Include="cache.h" />
-    <ClInclude Include="FifoTest.h" />
-    <ClInclude Include="fifo_cache.h" />
-    <ClInclude Include="LruTest.h" />
-    <ClInclude Include="lru_cache.h" />
-    <ClInclude Include="Test.h" />
-    <ClInclude Include="Tester.h" />
-    <ClInclude Include="_cache.h" />
+    <ClInclude Include="lib\alfu_cache.h" />
+    <ClInclude Include="lib\cache.h" />
+    <ClInclude Include="lib\fifo_cache.h" />
+    <ClInclude Include="lib\lru_cache.h" />
+    <ClInclude Include="lib\_cache.h" />
+    <ClInclude Include="tests\AlfuTest.h" />
+    <ClInclude Include="tests\FifoTest.h" />
+    <ClInclude Include="tests\LruTest.h" />
+    <ClInclude Include="tests\Test.h" />
+    <ClInclude Include="tests\Tester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,6 +5,8 @@
 using std::cout;
 using std::endl;
 
+using namespace cache;
+
 void lru_test::test()
 {
 	cout << "lru_test" << endl;

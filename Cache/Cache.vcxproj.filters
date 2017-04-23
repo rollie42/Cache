@@ -1,75 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Unit Tests">
-      <UniqueIdentifier>{0f305fb6-a491-484c-92b5-875503e3aa62}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Program.cpp">
-      <Filter>Source Files</Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{393fe87e-bd57-4f8b-9dae-84a9ffcdeab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{f25dfe29-5c33-4c8e-9bb8-96e0597a71df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="tests\AlfuTest.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="FifoTest.cpp">
-      <Filter>Unit Tests</Filter>
+    <ClCompile Include="tests\FifoTest.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="LruTest.cpp">
-      <Filter>Unit Tests</Filter>
+    <ClCompile Include="tests\LruTest.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="Tester.cpp">
-      <Filter>Unit Tests</Filter>
+    <ClCompile Include="tests\Test.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>Unit Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="AlfuTest.cpp">
-      <Filter>Unit Tests</Filter>
+    <ClCompile Include="tests\Tester.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cache.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lib\_cache.h">
+      <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="FifoTest.h">
-      <Filter>Unit Tests</Filter>
+    <ClInclude Include="lib\alfu_cache.h">
+      <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="fifo_cache.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lib\cache.h">
+      <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lru_cache.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lib\fifo_cache.h">
+      <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="_cache.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="lib\lru_cache.h">
+      <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="LruTest.h">
-      <Filter>Unit Tests</Filter>
+    <ClInclude Include="tests\AlfuTest.h">
+      <Filter>tests</Filter>
     </ClInclude>
-    <ClInclude Include="Test.h">
-      <Filter>Unit Tests</Filter>
+    <ClInclude Include="tests\FifoTest.h">
+      <Filter>tests</Filter>
     </ClInclude>
-    <ClInclude Include="Tester.h">
-      <Filter>Unit Tests</Filter>
+    <ClInclude Include="tests\LruTest.h">
+      <Filter>tests</Filter>
     </ClInclude>
-    <ClInclude Include="alfu_cache.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="tests\Test.h">
+      <Filter>tests</Filter>
     </ClInclude>
-    <ClInclude Include="AlfuTest.h">
-      <Filter>Unit Tests</Filter>
+    <ClInclude Include="tests\Tester.h">
+      <Filter>tests</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
