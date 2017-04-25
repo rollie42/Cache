@@ -19,7 +19,7 @@ namespace cache
 	const float c_maxWeight = 1000.0f;
 
 	// My own custom replacement policy, "Adaptive Least Frequently Used"
-	// Assigns each elemnt a weight, and increases that weight each time it is accessed. The
+	// Assigns each element a weight, and increases that weight each time it is accessed. The
 	// weight added increases over time by a multiplication factor, causing newer records to
 	// more likely have higher weights. After the weight being added gets too large, it is 
 	// reset, and a new queue is created for all future elements being modified.
